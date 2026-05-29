@@ -327,6 +327,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
+   * Header background on scroll
+   */
+  const header = document.getElementById('header');
+  if (header) {
+    const toggleHeaderScrolled = () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('load', toggleHeaderScrolled);
+    document.addEventListener('scroll', toggleHeaderScrolled, { passive: true });
+    toggleHeaderScrolled();
+  }
+
+  /**
    * Scroll top button
    */
   const scrollTop = document.querySelector('.scroll-top');
