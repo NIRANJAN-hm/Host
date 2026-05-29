@@ -3040,6 +3040,443 @@ body.service-page .navbar .active:focus {
   padding: 0;
 }
 
+.project-details-hero {
+  position: relative;
+  min-height: 64vh;
+  padding: 170px 0 72px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(26, 37, 47, 0.92), rgba(255, 107, 53, 0.76)),
+    url("../img/hero-carousel/hero-carousel-3.jpg") center/cover no-repeat;
+}
+
+.project-details-hero::before,
+.project-details-hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.project-details-hero::before {
+  width: 170px;
+  height: 170px;
+  right: 8%;
+  top: 18%;
+}
+
+.project-details-hero::after {
+  width: 110px;
+  height: 110px;
+  left: 7%;
+  bottom: 15%;
+}
+
+.project-details-hero .container {
+  z-index: 1;
+}
+
+.project-details-hero .service-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 18px;
+  padding: 9px 22px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  box-shadow: 0 12px 30px rgba(255, 107, 53, 0.28);
+}
+
+.project-details-hero h1 {
+  max-width: 780px;
+  margin: 0 0 22px;
+  color: #ffffff;
+  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  font-weight: 800;
+  line-height: 1.08;
+  font-family: var(--font-primary);
+}
+
+.project-details-hero p {
+  max-width: 720px;
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.16rem;
+  line-height: 1.75;
+}
+
+.project-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.project-hero-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.project-hero-actions .btn-primary {
+  border: 0;
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  box-shadow: 0 12px 28px rgba(255, 107, 53, 0.28);
+}
+
+.project-hero-actions .btn-outline-light {
+  border: 2px solid rgba(255, 255, 255, 0.84);
+}
+
+.project-hero-panel {
+  display: grid;
+  gap: 16px;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.22);
+}
+
+.project-hero-panel div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.project-hero-panel strong {
+  color: #ff6b35;
+  font-size: clamp(1.7rem, 4vw, 2.35rem);
+  line-height: 1;
+}
+
+.project-hero-panel span {
+  color: #1a252f;
+  font-weight: 700;
+  text-align: right;
+}
+
+.project-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 42px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.project-breadcrumb a {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.project-breadcrumb a:hover {
+  color: #ffffff;
+}
+
+.project-breadcrumb span:last-child {
+  color: #ffffff;
+}
+
+.project-details-modern {
+  padding: 82px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+}
+
+.project-details-modern .project-gallery-frame {
+  overflow: hidden;
+  border: 1px solid rgba(44, 62, 80, 0.08);
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(26, 37, 47, 0.12);
+}
+
+.project-details-modern .portfolio-details-slider img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 8.5;
+  object-fit: cover;
+}
+
+.project-details-modern .swiper-button-prev,
+.project-details-modern .swiper-button-next {
+  width: 46px;
+  height: 46px;
+}
+
+.project-details-modern .swiper-button-prev:after,
+.project-details-modern .swiper-button-next:after {
+  width: 46px;
+  height: 46px;
+  color: #ffffff;
+  background: rgba(26, 37, 47, 0.52);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.project-details-modern .swiper-pagination {
+  bottom: 16px;
+}
+
+.project-details-modern .row.justify-content-between {
+  align-items: flex-start;
+  margin-top: 34px !important;
+}
+
+.project-details-modern .portfolio-description,
+.project-details-modern .portfolio-info {
+  border: 1px solid rgba(44, 62, 80, 0.08);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(26, 37, 47, 0.08);
+}
+
+.project-details-modern .portfolio-description {
+  padding: 34px;
+}
+
+.project-details-modern .portfolio-description h2 {
+  margin-bottom: 18px;
+  color: #1a252f;
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  line-height: 1.2;
+}
+
+.project-details-modern .portfolio-description p {
+  color: #556270;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.project-details-modern .portfolio-description .testimonial-item {
+  display: grid;
+  gap: 22px;
+  margin: 30px 0;
+  padding: 30px;
+  border: 1px solid rgba(255, 107, 53, 0.16);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(247, 147, 30, 0.08));
+}
+
+.project-details-modern .portfolio-description .testimonial-item p {
+  margin: 0;
+  color: #1a252f;
+  font-size: 1.05rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.project-details-modern .portfolio-description .testimonial-item > div {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.project-details-modern .portfolio-description .testimonial-item .testimonial-img {
+  width: 78px;
+  height: 78px;
+  float: none;
+  margin: 0;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 24px rgba(26, 37, 47, 0.18);
+}
+
+.project-details-modern .portfolio-description .testimonial-item h3 {
+  margin: 0 0 4px;
+  padding: 0;
+  color: #1a252f;
+  font-size: 1.05rem;
+}
+
+.project-details-modern .portfolio-description .testimonial-item h4 {
+  margin: 0;
+  color: #ff6b35;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.project-details-modern .portfolio-description .testimonial-item .quote-icon-left,
+.project-details-modern .portfolio-description .testimonial-item .quote-icon-right {
+  color: #ff6b35;
+}
+
+.project-details-modern .portfolio-info {
+  position: sticky;
+  top: 104px;
+  padding: 28px;
+}
+
+.project-details-modern .portfolio-info h3 {
+  margin-bottom: 22px;
+  color: #1a252f;
+}
+
+.project-details-modern .portfolio-info h3::after {
+  width: 60px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+}
+
+.project-details-modern .portfolio-info ul li {
+  gap: 5px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(44, 62, 80, 0.08);
+}
+
+.project-details-modern .portfolio-info ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.project-details-modern .portfolio-info ul strong {
+  color: #ff6b35;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.project-details-modern .portfolio-info ul span {
+  color: #1a252f;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.project-details-modern .portfolio-info .btn-visit {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 8px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 12px 25px rgba(255, 107, 53, 0.22);
+}
+
+.project-details-modern .portfolio-info .btn-visit:hover {
+  background: linear-gradient(45deg, #f7931e, #ff6b35);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .project-details-hero {
+    min-height: auto;
+    padding: 135px 0 54px;
+  }
+
+  .project-hero-panel {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 18px;
+  }
+
+  .project-hero-panel div {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .project-hero-panel span {
+    text-align: center;
+  }
+
+  .project-details-modern .portfolio-info {
+    position: static;
+  }
+}
+
+@media (max-width: 575px) {
+  .project-details-hero {
+    padding: 112px 0 42px;
+    text-align: center;
+  }
+
+  .project-details-hero .service-badge,
+  .project-hero-actions {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .project-details-hero p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .project-hero-actions .btn {
+    width: 100%;
+  }
+
+  .project-hero-panel {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .project-breadcrumb {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .project-details-modern {
+    padding: 48px 0;
+  }
+
+  .project-details-modern .project-gallery-frame,
+  .project-details-modern .portfolio-description,
+  .project-details-modern .portfolio-info {
+    border-radius: 16px;
+  }
+
+  .project-details-modern .portfolio-details-slider img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-details-modern .portfolio-description,
+  .project-details-modern .portfolio-info {
+    padding: 22px;
+  }
+
+  .project-details-modern .portfolio-description .testimonial-item {
+    padding: 22px;
+  }
+
+  .project-details-modern .portfolio-description .testimonial-item > div {
+    grid-template-columns: 64px 1fr;
+  }
+
+  .project-details-modern .portfolio-description .testimonial-item .testimonial-img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
@@ -6048,6 +6485,7 @@ body.service-page .navbar .active:focus {
   }
 
   .projects-hero,
+  .project-details-hero,
   .packages-hero,
   .contact-hero {
     min-height: auto !important;
@@ -6055,6 +6493,7 @@ body.service-page .navbar .active:focus {
   }
 
   .projects-hero .container,
+  .project-details-hero .container,
   .packages-hero .container,
   .contact-hero .container {
     max-width: 100%;
@@ -6062,6 +6501,7 @@ body.service-page .navbar .active:focus {
   }
 
   .projects-hero h1,
+  .project-details-hero h1,
   .packages-hero h1,
   .contact-hero h1 {
     max-width: 100%;
@@ -6071,6 +6511,7 @@ body.service-page .navbar .active:focus {
   }
 
   .projects-hero p,
+  .project-details-hero p,
   .packages-hero p.lead,
   .contact-hero p,
   .contact-hero .lead,
@@ -6092,6 +6533,7 @@ body.service-page .navbar .active:focus {
   }
 
   .projects-hero .hero-actions,
+  .project-hero-actions,
   .packages-hero .hero-action-buttons {
     display: flex !important;
     flex-direction: column !important;
@@ -6100,6 +6542,7 @@ body.service-page .navbar .active:focus {
   }
 
   .projects-hero .hero-actions a,
+  .project-hero-actions .btn,
   .packages-hero .hero-action-buttons .btn {
     width: 100% !important;
     margin-right: 0 !important;
@@ -6639,6 +7082,7 @@ section {
 
   #hero,
   .projects-hero,
+  .project-details-hero,
   .packages-hero,
   .contact-hero {
     width: 100%;
@@ -6652,6 +7096,9 @@ section {
   .projects-hero .container,
   .projects-hero .row,
   .projects-hero [class*="col-"],
+  .project-details-hero .container,
+  .project-details-hero .row,
+  .project-details-hero [class*="col-"],
   .packages-hero .container,
   .packages-hero .row,
   .packages-hero [class*="col-"],
@@ -6671,6 +7118,7 @@ section {
 
   #hero .service-badge,
   .projects-hero .service-badge,
+  .project-details-hero .service-badge,
   .packages-hero .hero-eyebrow {
     max-width: 100%;
     white-space: normal !important;
@@ -6682,6 +7130,7 @@ section {
 
   #hero h1,
   .projects-hero h1,
+  .project-details-hero h1,
   .packages-hero h1,
   .contact-hero h1,
   .section-header h2 {
@@ -6692,6 +7141,7 @@ section {
 
   #hero .subtitle,
   .projects-hero p,
+  .project-details-hero p,
   .packages-hero p.lead,
   .contact-hero p,
   .contact-hero .lead,
@@ -6705,6 +7155,7 @@ section {
   .hero-badges,
   .hero-actions,
   .projects-hero .hero-actions,
+  .project-hero-actions,
   .packages-hero .hero-action-buttons {
     width: 100%;
     max-width: 100%;
@@ -6713,6 +7164,7 @@ section {
   .hero-badge,
   .hero-actions a,
   .projects-hero .hero-actions a,
+  .project-hero-actions .btn,
   .packages-hero .hero-action-buttons .btn,
   .btn-get-started,
   .btn-watch-video {
@@ -6910,6 +7362,7 @@ section {
   }
 
   .projects-hero,
+  .project-details-hero,
   .materials-hero {
     min-height: 560px !important;
     padding-top: 130px !important;
@@ -6967,6 +7420,7 @@ section {
   }
 
   .projects-hero,
+  .project-details-hero,
   .packages-hero,
   .materials-hero {
     min-height: auto !important;
@@ -7016,6 +7470,7 @@ section {
   }
 
   .projects-hero,
+  .project-details-hero,
   .packages-hero,
   .materials-hero {
     padding-top: 96px !important;
